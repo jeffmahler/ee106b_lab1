@@ -1,8 +1,8 @@
+#!/usr/bin/env python
 """
 Starter script for lab1. Demonstrates following an AR marker
 Author: Jeff Mahler
 """
-#!/usr/bin/env python
 import copy
 import rospy
 import sys
@@ -24,7 +24,6 @@ def main():
     rospy.init_node('moveit_node')
 
     #Start tf node
-    """
     listener = tf.TransformListener()
     from_frame = 'base'
     to_frame = 'ar_marker_0'
@@ -33,7 +32,6 @@ def main():
         print 'Frames not found'
         print 'Did you place AR marker 0 within view of the baxter left hand camera?'
         exit(0)
-    """
 
     #Initialize the left limb for joint velocity control
     limb = baxter_interface.Limb('left')

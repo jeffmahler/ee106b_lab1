@@ -141,10 +141,10 @@ catkin_package(
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-#install(PROGRAMS
-#  nodes/object_pose_publisher.py
-#  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-#  )
+install(PROGRAMS
+  src/starter.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+  )
 
 ## Mark executables and/or libraries for installation
 # install(TARGETS lab3 lab3_node
